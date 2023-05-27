@@ -2,7 +2,7 @@ import ImageSlider from "../components/image-slider";
 
 export default function Page() {
   return (
-    <>
+    <div className="w-full max-w-xl mx-auto">
       <h1>{"Image slider"}</h1>
       <ImageSlider
         images={[
@@ -11,6 +11,6 @@ export default function Page() {
           "https://picsum.photos/id/12/960/540",
         ]}
       />
-    </>
+    </div>
   );
 }
