@@ -3,7 +3,13 @@ export default function ImageSlider({ images }) {
 
   return (
     <div className="w-full">
-      <div className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory">
+      <div
+        className="w-full flex flex-row overflow-x-scroll snap-x snap-mandatory"
+        style={{
+          paddingBottom: "15px",
+          clipPath: "inset(0 0 15px 0)",
+        }}
+      >
         {images.map((url) => {
           return (
             <div key={url} className="w-full flex-shrink-0 snap-start">
